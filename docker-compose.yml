@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    volumes:
+      - ./:/home/http-test-container/code
+    network_mode: "host"
